@@ -19,10 +19,10 @@ show_actual = st.sidebar.checkbox("Show Actual Line", value=True)
 show_test = st.sidebar.checkbox("Show Test Line", value=True)
 
 # Define file paths dynamically
-news_title_path = f"../news_title/{ticker}_news_title.json"
-sentiment_score_path = f"../sentiment_score/{ticker}_news_sentiment_score.json"
-hybrid_predictions_path = f"../predictions/{ticker}_hybrid_predictions.csv"
-model_evaluation_result_path = f"../model_evaluation/{ticker}_model_evaluation.json"
+news_title_path = f"news_title/{ticker}_news_title.json"
+sentiment_score_path = f"sentiment_score/{ticker}_news_sentiment_score.json"
+hybrid_predictions_path = f"predictions/{ticker}_hybrid_predictions.csv"
+model_evaluation_result_path = f"model_evaluation/{ticker}_model_evaluation.json"
 # Load hybrid predictions
 hybrid_predictions = pd.read_csv(hybrid_predictions_path)
 
